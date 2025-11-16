@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="stylesheet" href="style/styles/normalize.css" />
+    <link rel="stylesheet" href="style/styles/style.css" />
+    
+    <title>Nate Список задач</title>
+  </head>
+  <body class="body">
+    <header>
+      <div class="header">
+        <h1 class="title">Список задач</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <form class="add-task-form">
+        <h2 class="add-task-form_title">Новая задача</h2>
+        <div class="add-task-form_row"></div>
+        <input
+          type="text"
+          placeholder="Название задачи..."
+          class="add-task-form_input"
+        />
+        <input
+          type="submit"
+          value="+ Добавить"
+          class="add-task-form_submit"
+        />
+      </form>
+
+      <div class="table">
+        <div class="column">
+          <div class="header_item header_backlog">Бэклог</div>
+          <ul class="tasks_list">
+            <li class="tasks_item tasks_backlog">Выучить JS</li>
+            <li class="tasks_item tasks_backlog">Выучить React</li>
+            <li class="tasks_item tasks_backlog">Сделать домашку</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <div class="header_item header_pending">В процессе</div>
+          <ul class="tasks_list">
+            <li class="tasks_item tasks_pending">Выпить Милкшэйк</li>
+            <li class="tasks_item tasks_pending">Попить воды</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <div class="header_item header_complited">Готово</div>
+          <ul class="tasks_list">
+            <li class="tasks_item tasks_complited">читать книгу</li>
+            <li class="tasks_item tasks_complited">покормить собаку</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <div class="header_item header_cart">Корзина</div>
+          <ul class="tasks_list">
+            <li class="tasks_item tasks_cart">лежить спать</li>
+            <li class="tasks_item tasks_cart">гулять в парке</li>
+          </ul>
+          <button id="button" class="tasks_clear-button">⨉ Очистить</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
